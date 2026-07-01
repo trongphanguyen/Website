@@ -4,50 +4,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Cá Nhân</title>
-
+    <title>Website Cá Nhân - Nguyễn Trọng Pha</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
     <header>
-        <h1>🌐 Website Cá Nhân</h1>
-        <p>Chào mừng bạn đến với website của tôi</p>
+        <nav>
+            <h2>My Portfolio</h2>
+
+            <ul>
+                <li><a href="#home">Trang chủ</a></li>
+                <li><a href="#about">Giới thiệu</a></li>
+                <li><a href="#skills">Kỹ năng</a></li>
+                <li><a href="#contact">Liên hệ</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <div class="container">
+    <section class="hero" id="home">
 
-        <div class="card">
-            <img src="https://i.pravatar.cc/250" alt="Avatar">
+        <img src="https://cdn.phototourl.com/free/2026-07-01-754d4f6d-6b97-4e18-9b1f-661817157be3.jpg"
+            alt="Avatar">
 
-            <h2>Nguyễn Trọng Pha</h2>
+        <h1>Nguyễn Trọng Pha</h1>
 
-            <p class="job">
-                Sinh viên Công nghệ Thông tin
-            </p>
+        <p>Sinh viên Công nghệ Thông tin</p>
 
-            <hr>
+        <button onclick="showMessage()">
+            Xin chào 👋
+        </button>
 
-            <h3>📖 Giới thiệu</h3>
+    </section>
 
-            <p>
-                Xin chào!
-                Tôi là sinh viên ngành Công nghệ Thông tin.
-                Tôi yêu thích lập trình Web, Python,
-                AI và luôn mong muốn học hỏi những công nghệ mới.
-            </p>
+    <section id="about" class="card">
 
-            <button onclick="showMessage()">
-                Liên hệ
-            </button>
+        <h2>Giới thiệu</h2>
+
+        <p>
+            Xin chào!
+            Tôi là Nguyễn Trọng Pha.
+            Hiện đang là sinh viên ngành Công nghệ Thông tin.
+            Tôi yêu thích lập trình Web, Python, Trí tuệ nhân tạo (AI)
+            và luôn mong muốn học hỏi các công nghệ mới.
+        </p>
+
+    </section>
+
+    <section id="skills" class="card">
+
+        <h2>Kỹ năng</h2>
+
+        <div class="skills">
+
+            <div>HTML</div>
+
+            <div>CSS</div>
+
+            <div>JavaScript</div>
+
+            <div>Python</div>
+
+            <div>Git & GitHub</div>
+
+            <div>C++</div>
 
         </div>
 
-    </div>
+    </section>
+
+    <section id="contact" class="card">
+
+        <h2>Thông tin liên hệ</h2>
+
+        <p>Email: nguyentrongpha@example.com</p>
+
+        <p>GitHub: github.com/trongphanguyen</p>
+
+        <button onclick="showMessage()">
+            Gửi lời chào
+        </button>
+
+    </section>
 
     <footer>
-        © 2026 Nguyễn Trọng Pha | Website đầu tiên bằng HTML - CSS - JavaScript
+
+        © 2026 Nguyễn Trọng Pha | Website được xây dựng bằng HTML, CSS và JavaScript
+
     </footer>
 
     <script src="script.js"></script>
